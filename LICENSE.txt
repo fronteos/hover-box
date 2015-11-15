@@ -1,0 +1,4 @@
+Code licensed under MIT, documentation and phots under CC BY 3.0.
+
+MIT License: https://github.com/twbs/bootstrap/blob/master/LICENSE
+CC License: https://creativecommons.org/licenses/by/3.0/

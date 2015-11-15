@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text over images on hover and more... | CSS-WORKSHOP.COM BY FRONTEOS.COM</title>
+    <meta name="description" content="Text over images on hover with many examples. CSS-WORKSHOP.COM - Make UI on your own. HTML5, CSS3 tips, components, web templates, JavaScript.">
+	<meta name="keywords" content="text over image on hover, transition, css, css3, html, html5, javasctipy, front-end, front-end tips, css tips, html components, jQuery">
+	<meta name="author" content="Piotr Elmanowski from Fronteos.com and Css-workshop.com">
+	
+	<meta property="og:image" content="img/og-logo.png">
+	<meta property="og:title" content="CSS-WORKSHOP.COM">
+	<meta property="og:description" content="Text over images on hover with many examples. CSS-WORKSHOP.COM - Make UI on your own. HTML5, CSS3 tips, components, web templates, JavaScript.">
+	<meta property="og:type" content="website">
+	
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/hover-box.css">
+	<link type="image/ico" rel="shortcut icon" href="favicon.png">	
+	
+</head>
+<body>
+	<header>
+		<a href="http://css-workshop.com" title="Go back to css-workshop.com"><img src="img/cssworkshop-logo.png" alt="CSS-WORKSHOP.COM"></a>
+		<h1>Text over images on hover and more</h1>
+	</header>
+	<div class="content">
+		<a href="http://css-workshop.com/examples/hover-box/css-workshop.com_hover-box.zip">Download component</a> or
+		<a href="http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/">Go back to article</a>
+		<h2>Image as a img tag and a layer with text on hover over it</h2>
+		<p>In this case the box's width and height depend on provided image size.</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<h2>Image as a background and a layer with text on hover on it</h2>
+		<p>In this case the box's width and height are defined in CSS and image is a background of the box.</p>
+<pre>
+&lt;div class="hvrbox hvrbox_background" style="background-image: url(img/photos/photo1.jpg);"&gt;
+	&lt;div class="hvrbox-layer_top"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox hvrbox_background" style="background-image: url(img/photos/photo1.jpg);">
+				<div class="hvrbox-layer_top">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<h2>Image as img tag and second image as layer on hover over it</h2>
+		<p>In this case there is no layer with text, because another image is displayed on hover.</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo3.JPG" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;img src="img/photos/ufo.png" alt="Mountains" class="hvrbox-layer_top hvrbox-layer_image"&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<img src="img/photos/ufo.png" alt="Mountains" class="hvrbox-layer_top hvrbox-layer_image">
+			</div>
+		</div>
+		<h2>Effects</h2>
+		<p>Sliding from bottom to top</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_slideup"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_slideup">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Sliding from top to bottom</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_slidedown"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_slidedown">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Sliding from left to right</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_slideright"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_slideright">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Sliding from right to left</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_slideleft"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_slideleft">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Scale from 0% to 100% with border-radius change.</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_scale"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_scale">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Rotate from 0 deg to 360 deg (one full rotation) with opacity and border-radius change.</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_rotate"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_rotate">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<p>Mixed two above examples - scaling and rotating.</p>
+<pre>
+&lt;div class="hvrbox"&gt;
+	&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+	&lt;div class="hvrbox-layer_top hvrbox-layer_scale-rotate"&gt;
+		&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+		<div class="wrapper">
+			<div class="hvrbox">
+				<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+				<div class="hvrbox-layer_top hvrbox-layer_scale-rotate">
+					<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+				</div>
+			</div>
+		</div>
+		<h2>Mobile support</h2>
+		<p>When user clicks here first – the top layer will show with text “Tap again to go further”, and on the second click – “hover box” will become linkable. You should test it by using mobile device.</p>
+<pre>
+&lt;a href="http://css-workshop.com" target="blank"&gt;
+	&lt;div class="hvrbox"&gt;
+		&lt;img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom"&gt;
+		&lt;div class="hvrbox-layer_top"&gt;
+			&lt;div class="hvrbox-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/a&gt;
+</pre>
+		<div class="wrapper">
+			<a href="http://css-workshop.com" target="blank">
+				<div class="hvrbox">
+					<img src="img/photos/photo1.jpg" alt="Mountains" class="hvrbox-layer_bottom">
+					<div class="hvrbox-layer_top">
+						<div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non. <div class="hvrbox-text_mobile">Tap again to go further</div></div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<footer>
+		Author: <a href="http://css-workshop.com/author-piotr-elmanowski/" target="blank" title="Web front-end developer">Piotr Elmanowski</a> | <a href="http://css-workshop.com" target="blank" title="Front-end, css, html and JavaScript tips and components">css-workshop.com</a> by <a href="http://fronteos.com" target="blank" title="High quality responsive websites and dedicated front-end provider">fronteos.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/hover-box.js"></script>
+	
+</body>
+</html>
