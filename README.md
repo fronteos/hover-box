@@ -6,4 +6,4 @@ Read more about "Hover box": http://css-workshop.com/hover-box-text-over-images-
 
 Watch live demo: http://css-workshop.com/examples/hover-box/
 
-Project created by me for http://fronteos.com/ owner of css-workshop.com platform.
+Project created by Piotr Elmanowski for http://fronteos.com/ owner of css-workshop.com platform.
